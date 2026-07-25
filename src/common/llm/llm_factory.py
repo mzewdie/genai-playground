@@ -10,10 +10,10 @@ class LLMFactory:
         
         match configuration.provider:
             
-            case "gemini":
+            case "Gemini":
                 return GeminiLLMService(model=configuration.model)
             
-            case "ollama":
+            case "Ollama":
                 return OllamaLLMService(model=configuration.model)
             
             case _:

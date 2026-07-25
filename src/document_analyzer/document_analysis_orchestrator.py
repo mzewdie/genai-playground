@@ -1,8 +1,6 @@
 import logging
 
 from src.common.document.analysis_document import AnalysisDocument
-from src.common.config.configuration import Configuration
-from src.common.config.configuration_loader import ConfigurationLoader
 from src.common.llm.llm_factory import LLMFactory
 from src.document_analyzer.action import Action
 

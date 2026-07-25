@@ -22,4 +22,5 @@ class GeminiLLMService(LLMService):
         self.llm=ChatGoogleGenerativeAI(model=model,google_api_key=api_key)
         
     def invoke(self, prompt) -> str:
+        llm_debug_logger.debug(f"Gemini is summarizing the document with model: {self.model}")
         return self.llm.invoke(prompt).content

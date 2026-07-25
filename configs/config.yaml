@@ -1,9 +1,9 @@
-#enter here the provider and its model
+#enter here the provider and its model as a list
 
-llm:
-  provider: gemini
-  model: gemini-2.5-flash
+providers:
+  Gemini:
+    - gemini-2.5-flash
 
-rag:
-  provider: gemini
-  model: rag_model  
+  Ollama:
+    - gemma3
+    - qwen3
