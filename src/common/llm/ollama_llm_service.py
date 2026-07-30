@@ -16,8 +16,8 @@ class OllamaLLMService(LLMService):
     def invoke(self, prompt):
         #return super().invoke(prompt)
         #return self.llm.invoke(prompt).content
-        logger.info(f"Ollama is summarizing the document with model: {self.model}")
-        llm_debug_logger.debug(f"Ollama is summarizing the document with model: {self.model}")
+        logger.info(f"Ollama is processing the document with model: {self.model}")
+        llm_debug_logger.debug(f"Ollama is processing the document with model: {self.model}")
         response: ChatResponse = chat(model=self.model, messages=[
             {
                 'role': 'user',

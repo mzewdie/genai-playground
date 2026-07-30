@@ -17,7 +17,7 @@ def configure_logging() -> None:
     console_handler.setFormatter(formatter)
 
     # File
-    file_handler = logging.FileHandler(log_dir/"doc_analyser_logs.log")
+    #file_handler = logging.FileHandler(log_dir/"doc_analyser_logs.log")
     file_handler = logging.FileHandler(log_dir/"doc_analyser_logs.log",
                                        mode="w",          # Overwrite the log file on each application start
                                        encoding="utf-8",) 
